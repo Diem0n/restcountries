@@ -27,7 +27,7 @@ function App() {
       <Navbar/>
       <Searchbar onSearchChange = {onSearchChange}/>
       {
-        filteredCountries.length > 0 ? <Container countries = {filteredCountries}/> : <h1 className='message'>Not found Try a different keyword</h1>
+        filteredCountries.length > 0 ? <Container countries = {filteredCountries}/> : <h1 className='message'>Opps! Seems like we don't have any countries to show</h1>
       }
      
     </div>
