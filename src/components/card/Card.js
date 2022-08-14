@@ -1,14 +1,11 @@
 import React  from "react";
 import "./Card.css";
 
-const cardcliked = (id) => {
-    console.log(id);
-}
 const Card = ({theme, id, name ,population , region , capital , svg}) => {
     const Na = 'N/A';
 
     return (
-        <div onClick={()=>{console.log(id)}} className={
+        <div className={
             theme === 'light' ?
             'card-light card' :
             'card-dark card '
