@@ -2,7 +2,6 @@
     margin: 1rem 4rem;
     /* make the card of fixed width */
     width: 250px;
-
     border-radius: 5px;
     overflow: hidden;
     display: flex;
@@ -34,7 +33,7 @@
     background-size: contain;
 }
 .card-content{
-    padding: 1rem 2vw;
+    padding: 2rem 2vw;
 }
 .card-title{
     font-size: 1.4rem;
@@ -50,3 +49,12 @@ span{
     font-weight: 700;
 
 }
+@media screen and (max-width: 768px){
+    .card{
+        margin: 1rem 1rem;
+    }
+    .card-content{
+        padding: 1rem 4vw;
+    }
+}
+    

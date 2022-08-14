@@ -41,3 +41,12 @@
 .icon-light{
     filter: invert(0);
 }
+@media screen and (max-width: 768px){
+    .icon{
+        padding: 0.5rem;
+    }
+    .navbar{
+        padding: 2rem 4vw;
+    }
+}
+    
