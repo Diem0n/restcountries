@@ -1,28 +1,74 @@
 .searchbar{
     margin-top: 2rem;
     padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
 }
-.searchbar input{
+.searchfield{
   height: 5rem;
-  background-color: hsl(209 , 23%, 22%);
   border-radius: 5px;
   width: 40%;
   padding: 0 2rem ;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   border: none;
-  color: hsl(0, 0%, 100%);
   font-size: 1.4rem;
   font-weight: 300;
 }
-.searchbar input:focus{
+.searchfield-light{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(209, 23%, 22%);
+
+}
+.searchfield-dark{
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+.searchfield:focus{
     outline: none;
 }
-.searchbar input::placeholder{
+.light::placeholder{
+    color: hsla(0, 1%, 23%, 0.551);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.dark::placeholder{
     color: hsla(0, 0%, 100%, 0.551);
     font-size: 1.4rem;
     font-weight: 300;
 }
+.filters{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    position: relative;
+}
+.filter{
+    padding: 1rem 2rem;
+    position: relative;
+
+    
+}
+.filter-params{
+    width: 14rem;
+    background-color: hsl(209 , 23%, 22%);
+    position: absolute;
+    top: 90%;
+    transform: translate(0 , -90);
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 100%);
+    display: none;
+}   
+
+li{
+    padding: .5rem 2rem ;
+    list-style:none;
+    background-color: papayawhip;
+    margin: 0 auto;
+    background-color: rgb(24, 30, 35);
+}
+ 
 @media screen and (max-width: 768px){
     .searchbar input{
         width: 80%;
@@ -30,6 +76,12 @@
     }
     .searchbar{
         margin: 0 auto;
+        width: 50%;
+        flex-direction: column;
+    }
+    .filter{
+        margin: 1rem auto;
+        max-width: fit-content;
+        
     }
 }
-    

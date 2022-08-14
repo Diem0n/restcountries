@@ -2,11 +2,11 @@ import React from "react";
 import './container.css';
 import Cardlist from "../components/cardList/Cardlist";
 
-const Container = ({countries}) => {
+const Container = ({countries, theme}) => {
     return(
         <>
             <div className="container">
-                <Cardlist countries={countries}/>
+                <Cardlist theme={theme} countries={countries}/>
             </div>
         </>
         

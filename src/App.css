@@ -1,11 +1,19 @@
 .App{
     height: 100vh;
-    background-color: hsl(207,26%,17%);
+    overflow: hidden;
 }
 .message{
-    color: hsl(0, 0%, 100%);
+    
     font-size: 2vw;
     font-weight: 300;
     text-align: center;
     margin-top: 2rem;
+}
+.App-light{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(207,26%,17%);
+}
+.App-dark{
+    background-color: hsl(207,26%,17%);
+    color: hsl(0, 0%, 100%);
 }

@@ -1,10 +1,18 @@
 import React  from "react";
 import "./Card.css";
 
-const Card = ({ id, name ,population , region , capital , svg}) => {
+const cardcliked = (id) => {
+    console.log(id);
+}
+const Card = ({theme, id, name ,population , region , capital , svg}) => {
     const Na = 'N/A';
+
     return (
-        <div className="card">
+        <div onClick={()=>{console.log(id)}} className={
+            theme === 'light' ?
+            'card-light card' :
+            'card-dark card '
+        }>
         <div className="card-image" >
             <img className="flag" src={svg} alt={name} />
         </div>
